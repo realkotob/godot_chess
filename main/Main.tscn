@@ -18,4 +18,3 @@ position = Vector2( 79.0684, 79.4945 )
 
 [node name="BlackPlayer" parent="." instance=ExtResource( 4 )]
 
-[connection signal="clicked_tile" from="Board" to="." method="_on_Board_clicked_tile"]

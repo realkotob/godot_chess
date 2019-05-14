@@ -40,4 +40,4 @@ func move_check(board):
 						if is_in_group("black"):
 							if tile.current_state.is_in_group("white"):
 								moves.append(tile)
-	return moves 
+	return moves

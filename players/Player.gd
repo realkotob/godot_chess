@@ -29,14 +29,6 @@ func generate_team(board):
 		var tile = board[piece.board_pos.x][piece.board_pos.y]
 		piece.move(tile.tile_center)
 		tile.current_state = piece
-		
-func ai_move(board):
-	var move_list = {}
-	var moves = []
-	for piece in $Pieces.get_children():
-		moves = piece.move_check(board)
-		if len(moves) > 0:
-			move_list[piece] = moves
 
 func team_move_check(board):
 	for piece in $Pieces.get_children():

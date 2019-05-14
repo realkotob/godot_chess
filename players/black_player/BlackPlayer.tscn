@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://players/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://pieces/pawns/black_pawn/BlackPawn.tscn" type="PackedScene" id=2]
+
+[node name="BlackPlayer" instance=ExtResource( 1 )]
+Pawn = ExtResource( 2 )
+team = "black"
+

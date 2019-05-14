@@ -38,6 +38,7 @@ func human_turn():
 			active_tile = null
 			
 func ai_turn():
+	print($BlackPlayer/Pieces.get_child_count())
 	var active_pieces = []
 	var active_piece
 	var chosen_move

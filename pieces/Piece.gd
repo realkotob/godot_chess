@@ -17,6 +17,7 @@ func move(end):
 
 func die():
 	queue_free()
+	emit_signal("died", self)
 	
 func move_check(board):
 	var moves = []

@@ -24,6 +24,8 @@ func generate_team(board):
 		p.add_to_group("pawns")
 		p.add_to_group(team)
 		$Pieces.add_child(p)
+		p.connect("died", self, "remove_piece")
+		
 		
 	for piece in $Pieces.get_children():
 		var tile = board[piece.board_pos.x][piece.board_pos.y]
@@ -33,3 +35,6 @@ func generate_team(board):
 func team_move_check(board):
 	for piece in $Pieces.get_children():
 		piece.valid_moves = piece.move_check(board)
+
+func remove_piece(piece):
+	$Pieces.remove_child(piece)
